@@ -4,7 +4,10 @@
   "description": "SVG Based 3D objects render.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webpack:dev": "webpack -d",
+    "webpack:watch-dev": "webpack -d --watch",
+    "webpack:prod": "webpack -p",
+    "server:dev": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,14 @@
   },
   "homepage": "https://github.com/jeffersonmourak/dotz#readme",
   "dependencies": {
-    "three.js": "^0.77.1"
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "lodash": "^4.17.4",
+    "three.js": "^0.77.1",
+    "webpack": "^2.5.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0"
   }
 }
